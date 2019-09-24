@@ -1,0 +1,11 @@
+FROM openjdk:7
+
+
+
+COPY . /usr/src/kafka
+WORKDIR /usr/src/kafka
+
+
+RUN javac Main.javac
+CMD ["java", "Main"]
+
